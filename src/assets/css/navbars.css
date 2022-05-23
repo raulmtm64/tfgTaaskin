@@ -1,0 +1,46 @@
+.topBar{
+    height: 7vh !important;
+    background-color: lightgray !important;
+    border: 1px solid black !important;
+}
+
+.leftMenuBar{
+    height: 90vh;
+    width: 25vw;
+    background-color: grey;
+    border-right: 1px solid black !important;
+}
+
+.expansionPanels{
+    width: 5vw;
+}
+
+.bottomBar{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    border: 1px solid black;
+    width: 25vw;
+    height: 5vh;
+    background-color: white;
+}
+
+.leftSideBottomBar{
+    width: 20%;
+}
+
+.rightSideBottomBar{
+    width: 10%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.iconsBottomBar{
+    transform: scale(1.4);
+}
+
+.iconsBottomBar:hover{
+    transform: scale(1.8);
+}
