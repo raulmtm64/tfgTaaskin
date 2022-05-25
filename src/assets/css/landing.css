@@ -110,7 +110,18 @@
 .imgLogoSize{
     width: 150px;
     height: 150px;
+    /* animation: logo 2s infinite; */
 }
+/* 
+@keyframes logo {
+    from{
+        transform: rotateY(0deg);
+    }
+    
+    to{
+        transform: rotateY(360deg);
+    }
+} */
 
 .signInForm{
     width: 100%;
@@ -442,7 +453,7 @@
 }
 
 
-@media only screen and (min-width: 556px) and (max-width: 768px){
+@media only screen and (min-width: 556px) and (max-width: 1024px){
     .container{
         flex-direction: column;
     }
@@ -499,45 +510,7 @@
         width: 75px;
         height: 75px;
     }
-
 }
-
-
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    .titleLanding {
-        font-size: 50pt;
-    }
-    
-    .contentCol1 {
-        font-size: 14pt;
-    }
-
-    .signInTitle{
-        font-size: 20pt;
-    }
-
-    .leftColSignUp{
-        font-size: 10pt;
-    }
-
-    .sqrCol1{
-        width: 80%;
-    }
-
-    .col2In{
-        width: 90%;
-    }
-
-    .formSignIn{
-        width: 100%;
-    }
-
-    .imgLogoSize{
-        width: 100px;
-        height: 100px;
-    }
-}
-
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px){
     .titleLanding {
@@ -558,5 +531,11 @@
 
     .formSignIn{
         width: 100%;
+    }
+    
+    .col2In {
+        height: 90%;
+        width: 80%;
+        border: 1px solid red;
     }
 }
