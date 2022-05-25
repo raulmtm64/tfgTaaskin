@@ -16,61 +16,44 @@
       </div>
     </div>
     <div class="col2">
-      <div class="col2In">
-        <div class="sqrCol2Out">
-          <!-- <div class="landingBtn topBtn">
-            <button class="button"> Sign Up </button>
+      <div class="col2In"></div>
+      <div class="sqrCol2Out">
+        <div class="signInTitle border">
+          <img src="../assets/img/logo.png" width="150" height="150">
+          Sign In to start working
+        </div>
+        <div class="signInForm border">
+          <form class="formSignIn mb-16">
+            <v-text-field
+              v-model="email"
+              :error-messages="emailErrors"
+              label="E-mail"
+              required
+              dark
+              @input="$v.email.$touch()"
+              @blur="$v.email.$touch()"
+              class="inputSignIn"
+            ></v-text-field>
+            <v-text-field
+              v-model="password"
+              :error-messages="pwdErrors"
+              label="Password"
+              required
+              dark
+              @input="$v.password.$touch()"
+              @blur="$v.password.$touch()"
+              class="inputSignIn"
+            ></v-text-field>
+            <button class="mt-4 mb-4 button" @click="signIn"> Sign In </button>
+          </form>
+        </div>
+        <hr class="widtthh">
+        <div class="signUp">
+          <div class="leftColSignUp">
+            Don't have an account?
           </div>
-          <div class="landingBtn botBtn">
-            <button class="button"> Sign In </button>
-          </div> -->
-          <div class="signInTitle border">
-            <img src="../assets/img/logo.png" width="150" height="150">
-            Sign In to start working
-          </div>
-          <div class="border">
-            <form class="bore">
-              <v-text-field
-                v-model="name"
-                :error-messages="nameErrors"
-                :counter="10"
-                label="Name"
-                required
-                @input="$v.name.$touch()"
-                @blur="$v.name.$touch()"
-              ></v-text-field>
-              <v-text-field
-                v-model="email"
-                :error-messages="emailErrors"
-                label="E-mail"
-                required
-                @input="$v.email.$touch()"
-                @blur="$v.email.$touch()"
-              ></v-text-field>
-              <v-select
-                v-model="select"
-                :items="items"
-                :error-messages="selectErrors"
-                label="Item"
-                required
-                @change="$v.select.$touch()"
-                @blur="$v.select.$touch()"
-              ></v-select>
-              <v-checkbox
-                v-model="checkbox"
-                :error-messages="checkboxErrors"
-                label="Do you agree?"
-                required
-                @change="$v.checkbox.$touch()"
-                @blur="$v.checkbox.$touch()"
-              ></v-checkbox>
-
-              <v-btn class="mr-4" @click="submit"> submit </v-btn>
-              <v-btn @click="clear"> clear </v-btn>
-            </form>
-          </div>
-          <div class="border">
-
+          <div class="rightColSignUp">
+            <button class="mt-4 mb-4 button" @click="signIn"> Get Started </button>
           </div>
         </div>
       </div>
