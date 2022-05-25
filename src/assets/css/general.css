@@ -1,3 +1,14 @@
+@font-face {
+    font-family: GeoSans;
+    src: url(../fonts/GeosansLight.ttf);
+}
+
+@font-face {
+    font-family: GeoSans-oblique;
+    src: url(../fonts/GeosansLight-Oblique.ttf);
+}
+
 *{
     transition: .5s ease-in-out;
+    font-family: GeoSans;
 }

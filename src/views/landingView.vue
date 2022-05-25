@@ -5,7 +5,7 @@
         <div class="titleLanding">
           TaasKin
         </div>
-        <div class="contentCol1">
+        <div class="contentCol1 deleteText">
           Utiliza el mejor gestor de tareas gratuito y mejora tu efiencia tanto
           en el trabajo como en tu día a día.
         </div>
@@ -19,11 +19,11 @@
       <div class="col2In"></div>
       <div class="sqrCol2Out">
         <div class="signInTitle border">
-          <img src="../assets/img/logo.png" width="150" height="150">
+          <img src="../assets/img/logo.png" class="imgLogoSize">
           Sign In to start working
         </div>
         <div class="signInForm border">
-          <form class="formSignIn mb-16">
+          <form class="formSignIn">
             <v-text-field
               v-model="email"
               :error-messages="emailErrors"
@@ -42,12 +42,12 @@
               dark
               @input="$v.password.$touch()"
               @blur="$v.password.$touch()"
-              class="inputSignIn"
+              class="inputSignIn font-weight-bold"
             ></v-text-field>
             <button class="mt-4 mb-4 button" @click="signIn"> Sign In </button>
           </form>
         </div>
-        <hr class="widtthh">
+        <hr class="separationBar">
         <div class="signUp">
           <div class="leftColSignUp">
             Don't have an account?

@@ -107,6 +107,11 @@
     font-size: 30pt;
 }
 
+.imgLogoSize{
+    width: 150px;
+    height: 150px;
+}
+
 .signInForm{
     width: 100%;
     height: 40%;
@@ -133,12 +138,13 @@
 
 .inputSignIn{
     width: 90%;
+    font-weight: bolder !important;
 }
 
-
-.widtthh{
-    width: 70%;
-    height: 2px;
+.separationBar{
+    width: 85%;
+    height: 3px;
+    background-color: white;
 }
 
 .signUp{
@@ -155,7 +161,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    width: 45%;
+    width: 47%;
     height: 100%;
     color: white;
     font-family: GeoSans;
@@ -168,7 +174,7 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    width: 45%;
+    width: 47%;
     height: 100%;
 }
 /* botones de sign up/in */
@@ -227,4 +233,330 @@
 .button:active::after {
     transition: 0s;
     transform: translate(0, 5%);
+}
+
+
+/* Start of the media queries */
+@media only screen and (max-width: 320px){
+    .container{
+        flex-direction: column;
+    }
+
+    .col1{
+        height: 50%;
+    }
+
+    .deleteText{
+        display: none;
+    }
+
+    .titleLanding {
+        font-size: 30pt;
+    }
+
+    .contentCol1 {
+        font-size: 10pt;
+        font-weight: bolder;
+    }
+
+    .col2In{
+        height: 95%;
+        width: 100%;
+    }
+
+    .signInTitle{
+        font-size: 14pt;
+        height: 20%;
+        margin-top: 5%;
+    }
+
+    .sqrCol2Out {
+        height: 100%;
+        width: 80%;
+    }
+
+    .leftColSignUp{
+        font-size: 12pt;
+    }
+
+    .sqrCol1{
+        width: 80%;
+        height: 60%;
+    }
+
+    .formSignIn{
+        width: 100%;
+        height: 100%;
+    }
+
+    .button{
+        height: 25%;
+        width: 90%;
+        font-size: 10pt;
+    }
+
+    .imgLogoSize{
+        width: 50px;
+        height: 50px;
+    }
+
+    .separationBar{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 425px){
+    .container{
+        flex-direction: column;
+    }
+
+    .col1{
+        height: 50%;
+    }
+
+    .deleteText{
+        display: none;
+    }
+
+    .titleLanding {
+        font-size: 30pt;
+    }
+    
+    .contentCol1 {
+        font-size: 12pt;
+        font-weight: bolder;
+    }
+
+    .col2In{
+        height: 95%;
+        width: 100%;
+    }
+
+    .signInTitle{
+        font-size: 16pt;
+        height: 20%;
+        margin-top: 5%;
+    }
+
+    .sqrCol2Out {
+        height: 100%;
+        width: 60%;
+    }
+
+    .leftColSignUp{
+        font-size: 12pt;
+    }
+
+    .sqrCol1{
+        width: 80%;
+        height: 60%;
+    }
+
+    .formSignIn{
+        width: 100%;
+        height: 100%;
+    }
+
+    .button{
+        height: 15%;
+        width: 80%;
+        font-size: 10pt;
+    }
+
+    .imgLogoSize{
+        width: 75px;
+        height: 75px;
+    }
+
+    .separationBar{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 425px) and (max-width: 556px){
+    .container{
+        flex-direction: column;
+    }
+
+    .col1{
+        height: 50%;
+    }
+
+    .deleteText{
+        display: none;
+    }
+
+    .titleLanding {
+        font-size: 30pt;
+    }
+    
+    .contentCol1 {
+        font-size: 14pt;
+    }
+
+    .col2In{
+        height: 90%;
+    }
+
+    .signInTitle{
+        font-size: 16pt;
+        height: 20%;
+        margin-top: 5%;
+    }
+
+    .sqrCol2Out {
+        height: 100%;
+        width: 60%;
+    }
+
+    .leftColSignUp{
+        font-size: 12pt;
+    }
+
+    .sqrCol1{
+        width: 80%;
+        height: 60%;
+    }
+
+    .formSignIn{
+        width: 100%;
+        height: 100%;
+    }
+
+    .button{
+        height: 15%;
+        width: 80%;
+        font-size: 10pt;
+    }
+
+    .imgLogoSize{
+        width: 75px;
+        height: 75px;
+    }
+
+    .separationBar{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 556px) and (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+
+    .col1{
+        height: 50%;
+    }
+
+    .deleteText{
+        display: none;
+    }
+
+    .titleLanding {
+        font-size: 30pt;
+    }
+    
+    .contentCol1 {
+        font-size: 14pt;
+    }
+
+    .col2In{
+        height: 90%;
+    }
+
+    .signInTitle{
+        font-size: 20pt;
+        height: 20%;
+        margin-top: 5%;
+    }
+
+    .sqrCol2Out {
+        height: 100%;
+        width: 60%;
+    }
+
+    .leftColSignUp{
+        font-size: 14pt;
+    }
+
+    .sqrCol1{
+        width: 80%;
+        height: 60%;
+    }
+
+    .formSignIn{
+        width: 100%;
+    }
+
+    .button{
+        height: 15%;
+    }
+
+    .imgLogoSize{
+        width: 75px;
+        height: 75px;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .titleLanding {
+        font-size: 50pt;
+    }
+    
+    .contentCol1 {
+        font-size: 14pt;
+    }
+
+    .signInTitle{
+        font-size: 20pt;
+    }
+
+    .leftColSignUp{
+        font-size: 10pt;
+    }
+
+    .sqrCol1{
+        width: 80%;
+    }
+
+    .col2In{
+        width: 90%;
+    }
+
+    .formSignIn{
+        width: 100%;
+    }
+
+    .imgLogoSize{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px){
+    .titleLanding {
+        font-size: 60pt;
+    }
+    
+    .contentCol1 {
+        font-size: 15pt;
+    }
+
+    .signInTitle{
+        font-size: 25pt;
+    }
+
+    .leftColSignUp{
+        font-size: 13pt;
+    }
+
+    .formSignIn{
+        width: 100%;
+    }
 }
