@@ -6,12 +6,10 @@
           TaasKin
         </div>
         <div class="contentCol1 deleteText">
-          Utiliza el mejor gestor de tareas gratuito y mejora tu efiencia tanto
-          en el trabajo como en tu día a día.
+          Use the best free task manager and improve your efficiency both at work and your daily life.
         </div>
         <div class="contentCol1">
-          Organiza tus tareas mediante paneles o listas y crea grupos, todo para
-          gestionar proyectos desde TaasKin!
+          Organize your tasks using panels or lists and create groups, all for manage projects from TaasKin!
         </div>
       </div>
     </div>
