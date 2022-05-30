@@ -9,9 +9,13 @@
   },
   "dependencies": {
     "@mdi/font": "^6.7.96",
+    "@vuelidate/core": "^2.0.0-alpha.41",
+    "@vuelidate/validators": "^2.0.0-alpha.29",
+    "axios": "^0.27.2",
     "core-js": "^3.8.3",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
+    "vuelidate": "^0.7.7",
     "vuetify": "^2.6.0",
     "vuex": "^3.6.2"
   },
@@ -23,6 +27,7 @@
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "dotenv-webpack": "^7.1.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "sass": "~1.32.0",

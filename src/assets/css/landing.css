@@ -140,7 +140,7 @@
     justify-content: center;
     align-items: center;
     width: 70%;
-    height: 80%;
+    height: 90%;
     padding: 1%;
     color: white;
     border-radius: 8px;
@@ -150,6 +150,11 @@
 .inputSignIn{
     width: 90%;
     font-weight: bolder !important;
+}
+
+.v-application .error--text {
+    color: #ff9f9f !important;
+    caret-color: #ff9f9f !important;
 }
 
 .separationBar{
