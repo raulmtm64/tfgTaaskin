@@ -43,7 +43,7 @@
               @blur="$v.pwd.$touch()"
               class="inputSignIn"
             ></v-text-field>
-            <button class="mt-4 mb-4 button" @click="login" type="button"> Sign In </button>
+            <button class="mt-4 mb-4 button" @click="login()" type="button"> Sign In </button>
           </form>
         </div>
         <hr class="separationBar">
@@ -63,7 +63,7 @@
 <script>
 import { validationMixin } from 'vuelidate'
 import { required, email } from 'vuelidate/lib/validators';
-// import axios from 'axios';
+import axios from 'axios';
 
 export default {
   name: "LandingView",
@@ -95,22 +95,17 @@ export default {
   },
   methods: {
     async login() {
-      // var user = {
-      //   userEmail: this.email.trim(),
-      //   userPwd: this.pwd.trim()
-      // };
-      console.log(process.env.VUE_APP_TOTAL_PATH);
-      // let response = await axios.post(process.env.VUE_APP_TOTAL_PATH + "/login",
-      // {
-      //   "email": this.userEmail,
-      //   "password": this.userPwd
-      // })
-      // console.log(process.env.VUE_APP_TOTAL_PATH);
-      // if(response.data.email){
-      //   console.log("cacc");
-      // } else {
-      //   console.log("cxacc fuera");
-      // }
+      var user = {
+        userEmail: this.email.trim(),
+        userPwd: this.pwd.trim()
+      };
+      console.log(user);
+      let response = await axios.post(`${process.env.VUE_APP_SERVER_TOTAL_PATH}` + "/login",
+      {
+        "email": this.userEmail,
+        "password": this.userPwd
+      });
+      console.log(response);
     },
   },
 };
