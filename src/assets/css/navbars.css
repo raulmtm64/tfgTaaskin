@@ -1,7 +1,6 @@
 .topBar{
     height: 10vh !important;
     background-color: lightgray !important;
-    border: 1px solid black !important;
     background-image: url(../img/back-img/fondo9.png);
     transform: rotate(180deg);
 }
@@ -18,22 +17,24 @@
 
 .leftMenuBar{
     height: 90vh;
-    width: 25vw;
-    background-color: rgb(44 141 151);
+    width: 20vw;
+    background-color: #bbc8ca;
     filter: saturate(200%);
-    border-right: 1px solid black !important;
+    box-shadow: 2px 1px 15px -4px rgba(0,0,0,0.75);
+    /* border-right: 1px solid black !important; */
 }
 
 .expansionPanels{
-    width: 5vw;
+    width: 4vw;
 }
 
 .bottomBar{
     position: absolute;
     bottom: 0%;
     left: 0%;
-    border: 1px solid black;
-    width: 25vw;
+    /* border: 1px solid black; */
+    background-color: #919ca1 !important;
+    width: 20vw;
     height: 5vh;
     background-color: white;
 }
