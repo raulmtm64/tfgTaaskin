@@ -9,7 +9,7 @@
           Use the best free task manager and improve your efficiency both at work and your daily life.
         </div>
         <div class="contentCol1">
-          Organize your tasks using panels or lists and create groups, all for manage projects from TaasKin!
+          Organize your tasks using panels or lists and create groups, all for managing projects with TaasKin!
         </div>
       </div>
     </div>
@@ -33,17 +33,17 @@
               class="inputSignIn"
             ></v-text-field>
             <v-text-field
-              v-model="password"
+              v-model="pwd"
               :error-messages="pwdErrors"
               label="Password"
               type="password"
               required
               dark
-              @input="$v.password.$touch()"
-              @blur="$v.password.$touch()"
-              class="inputSignIn font-weight-bold"
+              @input="$v.pwd.$touch()"
+              @blur="$v.pwd.$touch()"
+              class="inputSignIn"
             ></v-text-field>
-            <button class="mt-4 mb-4 button" @click="signIn"> Sign In </button>
+            <button class="mt-4 mb-4 button" @click="login()" type="button"> Sign In </button>
           </form>
         </div>
         <hr class="separationBar">
@@ -52,7 +52,7 @@
             Don't have an account?
           </div>
           <div class="rightColSignUp">
-            <button class="mt-4 mb-4 button" @click="signIn"> Get Started </button>
+            <button class="mt-4 mb-4 button" type="button"> Get Started </button>
           </div>
         </div>
       </div>
@@ -61,11 +61,51 @@
 </template>
 
 <script>
+import { validationMixin } from 'vuelidate'
+import { required, email } from 'vuelidate/lib/validators';
+import axios from 'axios';
+
 export default {
   name: "LandingView",
+  mixins: [validationMixin],
+  data() {
+    return{
+      email: "",
+      pwd: ""
+    }
+  },
+  validations: {
+      email: { required, email },
+      pwd: { required }
+  },
+  computed: {
+    emailErrors () {
+        const errors = []
+        if (!this.$v.email.$dirty) return errors
+        !this.$v.email.email && errors.push('Must be valid e-mail')
+        !this.$v.email.required && errors.push('E-mail is required')
+        return errors
+      },
+      pwdErrors () {
+        const errors = []
+        if (!this.$v.pwd.$dirty) return errors
+        !this.$v.pwd.required && errors.push('Password is required.')
+        return errors
+      },
+  },
   methods: {
-    conectar() {
-      alert("cacc");
+    async login() {
+      var user = {
+        userEmail: this.email.trim(),
+        userPwd: this.pwd.trim()
+      };
+      console.log(user);
+      let response = await axios.post(`${process.env.VUE_APP_SERVER_TOTAL_PATH}` + "/login",
+      {
+        "email": this.userEmail,
+        "password": this.userPwd
+      });
+      console.log(response);
     },
   },
 };
