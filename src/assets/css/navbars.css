@@ -1,13 +1,26 @@
 .topBar{
-    height: 7vh !important;
+    height: 10vh !important;
     background-color: lightgray !important;
     border: 1px solid black !important;
+    background-image: url(../img/back-img/fondo9.png);
+    transform: rotate(180deg);
+}
+
+.topBarStyles{
+    transform: rotate(180deg);
+}
+
+.taaskinLogo{
+    color: white;
+    letter-spacing: 1em;
+    font-size: 1.5em;
 }
 
 .leftMenuBar{
     height: 90vh;
     width: 25vw;
-    background-color: grey;
+    background-color: rgb(44 141 151);
+    filter: saturate(200%);
     border-right: 1px solid black !important;
 }
 

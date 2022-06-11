@@ -36,6 +36,7 @@
               v-model="password"
               :error-messages="pwdErrors"
               label="Password"
+              type="password"
               required
               dark
               @input="$v.password.$touch()"

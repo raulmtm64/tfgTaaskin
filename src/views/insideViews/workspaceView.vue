@@ -6,10 +6,6 @@
           <div class="Workspaces">
             <v-btn color="#ebe8e8"> Workspaces </v-btn>
           </div>
-          <v-divider vertical></v-divider>
-          <div class="Calendar">
-            <v-btn color="#ebe8e8"> Calendar </v-btn>
-          </div>
         </div>
       </div>
       <div class="rightSideTopRow me-16">

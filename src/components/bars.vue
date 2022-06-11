@@ -3,7 +3,7 @@
 
     <v-toolbar flat class="topBar d-flex flex-row justify-center align-center">
       <v-toolbar-title class="topBarStyles">
-        <span class="black--text font-weight-bold">Taaskin</span>
+        <span class="font-weight-bold taaskinLogo">Taaskin</span>
       </v-toolbar-title>
     </v-toolbar>
 

@@ -26,11 +26,6 @@ const routes = [
         path: 'cacc',
         component: () => import(/* webpackChunkName: "about" */ '../views/insideViews/cacc.vue'),
         name: 'cacc'
-      },
-      {
-        path: 'calendar',
-        component: () => import(/* webpackChunkName: "about" */ '../views/insideViews/calendarView.vue'),
-        name: 'calendar'
       }
     ]
   }
