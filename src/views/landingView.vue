@@ -17,7 +17,7 @@
       <div class="col2In"></div>
       <div class="sqrCol2Out">
         <div class="signInTitle border">
-          <img src="../assets/img/logo.png" class="imgLogoSize">
+          <img src="../assets/img/Logo.png" class="imgLogoSize me-5">
           Sign In to start working
         </div>
         <div class="signInForm border">
