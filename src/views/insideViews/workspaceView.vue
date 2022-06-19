@@ -14,7 +14,7 @@
             hide-details
             single-line
             color="black"
-            placeholder="Search..."
+            placeholder="Buscar por..."
           ></v-text-field>
           <v-btn icon>
             <v-icon>mdi-magnify</v-icon>
@@ -29,7 +29,7 @@
       <div class="leftColInnerView">
         <div class="leftColTitle mt-16">
           <v-icon>mdi-clock-outline</v-icon>
-          Recently used...
+          Usados recientemente
         </div>
         <div class="leftColContent mt-16">
           <button class="cardButtons">
@@ -37,7 +37,7 @@
               <v-list-item three-line class="spaceCards">
                 <v-list-item-content>
                   <v-list-item-title class="text-h5 mb-1">
-                    Title 1
+                    Título 1
                     <v-divider></v-divider>
                   </v-list-item-title>
                   <v-list-item-subtitle>
@@ -54,7 +54,7 @@
               <v-list-item three-line class="spaceCards">
                 <v-list-item-content>
                   <v-list-item-title class="text-h5 mb-1">
-                    Title 2
+                    Título 2
                     <v-divider></v-divider>
                   </v-list-item-title>
                   <v-list-item-subtitle>
@@ -72,7 +72,7 @@
       <div class="rightColInnerView">
         <div class="rightColTitle mt-16">
           <v-icon>mdi-star-outline</v-icon>
-          Favourite lists...
+          Listas favoritas...
         </div>
         <div class="rightColContent mt-16">
           <button class="cardButtons">
@@ -80,7 +80,7 @@
               <v-list-item three-line class="spaceCards">
                 <v-list-item-content>
                   <v-list-item-title class="text-h5 mb-1">
-                    Title 2
+                    Título 2
                     <v-divider></v-divider>
                   </v-list-item-title>
                   <v-list-item-subtitle>

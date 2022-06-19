@@ -1,8 +1,8 @@
 <template>
     <div class="containerError">
         ERROR 404:
-        The page you have been looking for does not exist.
-        <button type="button1" class="button mt-5" @click="goHome()"> Go back </button>
+        La página que ests buscando no existe.
+        <button type="button1" class="button mt-5" @click="goHome()"> Volver </button>
     </div>
 </template>
 

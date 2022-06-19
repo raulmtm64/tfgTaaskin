@@ -12,7 +12,7 @@
 
         <v-expansion-panels focusable>
           <v-expansion-panel class="expansionPanels mb-16">
-            <v-expansion-panel-header>Groups</v-expansion-panel-header>
+            <v-expansion-panel-header>Grupos</v-expansion-panel-header>
             <v-expansion-panel-content>
               <div>a</div>
               <div>a</div>
@@ -21,7 +21,7 @@
           </v-expansion-panel>
 
           <v-expansion-panel class="expansionPanels mb-16">
-            <v-expansion-panel-header>Panels</v-expansion-panel-header>
+            <v-expansion-panel-header>Paneles</v-expansion-panel-header>
             <v-expansion-panel-content>
               <div>a</div>
               <div>a</div>
@@ -30,7 +30,7 @@
           </v-expansion-panel>
 
           <v-expansion-panel class="expansionPanels mb-16">
-            <v-expansion-panel-header>Lists</v-expansion-panel-header>
+            <v-expansion-panel-header>Listas</v-expansion-panel-header>
             <v-expansion-panel-content>
               <div>a</div>
               <div>a</div>

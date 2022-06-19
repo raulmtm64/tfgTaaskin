@@ -6,10 +6,10 @@
           TaasKin
         </div>
         <div class="contentCol1 deleteText">
-          Use the best free task manager and improve your efficiency both at work and your daily life.
+          Usa el mejor gestor de tareas y mejora tu eficiencia tanto en el trabajo como en tu día a día.
         </div>
         <div class="contentCol1">
-          Organize your tasks using panels or lists and create groups, all for managing projects with TaasKin!
+          Organiza tus tareas usando los paneles o listas y crea grupos, todo ello en TaasKin!
         </div>
       </div>
     </div>
@@ -18,7 +18,7 @@
       <div class="sqrCol2Out">
         <div class="signInTitle border">
           <img src="../assets/img/Logo.png" class="imgLogoSize me-5">
-          Sign In to start working
+          Inicia sesión para empezar!
         </div>
         <div class="signInForm">
           <div class="formSignIn2" v-if="message != ''">
@@ -38,23 +38,23 @@
             <v-text-field 
               v-model="pwd" 
               :error-messages="pwdErrors" 
-              label="Password" 
+              label="Contraseña" 
               type="password" 
               required dark
               @input="$v.pwd.$touch()" 
               @blur="$v.pwd.$touch()" 
               class="inputSignIn">
             </v-text-field>
-            <button class="mt-4 mb-4 button"> Sign In </button>
+            <button class="mt-4 mb-4 button"> Iniciar sesión </button>
           </form>
         </div>
         <hr class="separationBar">
         <div class="signUp">
           <div class="leftColSignUp">
-            Don't have an account?
+            ¿Todavía no tienes cuenta?
           </div>
           <div class="rightColSignUp">
-            <button class="mt-4 mb-4 button" type="button" @click="goRegister()"> Get Started </button>
+            <button class="mt-4 mb-4 button" type="button" @click="goRegister()"> Registrate aquí </button>
           </div>
         </div>
       </div>
@@ -116,7 +116,7 @@ export default {
         this.$store.state.id_user = response.data.id_user;
         this.$store.dispatch('updateIdAction');
         if (response.data.email && response.data.password) {
-          localStorage.setItem('id_user', response.data.id_user);
+          // localStorage.setItem('id_user', response.data.id_user);
           router.push('/' + `${response.data.id_user}` + '/home');
         } else {
           this.message = "No se encuentra el usuario";
