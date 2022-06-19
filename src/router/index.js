@@ -10,11 +10,13 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/landingView.vue')
   },
   {
-    path: '/id',
+    path: '/register',
+    name: 'register',
+    component: () => import(/* webpackChunkName: "about" */ '../views/register.vue')
+  },
+  {
+    path: '/:id(\\d+)',
     name: 'id',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/firstInnerView.vue'),
     children: [
       {
@@ -28,6 +30,11 @@ const routes = [
         name: 'cacc'
       }
     ]
+  },
+  {
+    path: '/*',
+    name: 'error',
+    component: () => import(/* webpackChunkName: "about" */ '../views/error404.vue'),
   }
 ]
 

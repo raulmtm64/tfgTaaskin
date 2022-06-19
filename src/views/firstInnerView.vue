@@ -8,12 +8,16 @@
 </template>
 
 <script>
-  import bars from "../components/bars";
+import router from "@/router";
+import bars from "../components/bars";
 
   export default {
     name: 'WorkspaceView',
     components: {
       bars
+    },
+    mounted () {
+      router.push('/1/home').catch(()=>{});
     }
   }
 </script>

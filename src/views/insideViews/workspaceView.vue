@@ -4,7 +4,7 @@
       <div class="leftSideTopRow ms-16">
         <div class="leftContainer">
           <div class="Workspaces">
-            <v-btn color="#ebe8e8"> Workspaces </v-btn>
+            <v-btn color="#ebe8e8"> {{ $store.getters.idUser }} </v-btn>
           </div>
         </div>
       </div>

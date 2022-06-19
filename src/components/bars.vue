@@ -21,15 +21,6 @@
           </v-expansion-panel>
 
           <v-expansion-panel class="expansionPanels mb-16">
-            <v-expansion-panel-header>Friends</v-expansion-panel-header>
-            <v-expansion-panel-content>
-              <div>a</div>
-              <div>a</div>
-              <div>a</div>
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-
-          <v-expansion-panel class="expansionPanels mb-16">
             <v-expansion-panel-header>Panels</v-expansion-panel-header>
             <v-expansion-panel-content>
               <div>a</div>
@@ -54,17 +45,7 @@
           <div>
             <a href="">
               <v-icon
-                color="black"
-                class="iconsBottomBar"
-              >
-                mdi-account-plus
-              </v-icon>
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <v-icon
-                color="black"
+                color="white"
                 class="iconsBottomBar"
               >
                 mdi-account-multiple-plus
@@ -75,7 +56,7 @@
         <div class="d-flex flex-row justify-end me-5 rightSideBottomBar ">
           <a href="">
             <v-icon
-              color="black"
+              color="white"
               class="iconsBottomBar"
             >
               mdi-cog
