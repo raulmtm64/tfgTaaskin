@@ -115,7 +115,7 @@ export default {
       if (this.errors != '') {
         this.$store.state.id_user = response.data.id_user;
         this.$store.dispatch('updateIdAction');
-        if (response.data.email && response.data.password) {
+        if (response.data.email) {
           // localStorage.setItem('id_user', response.data.id_user);
           router.push('/' + `${response.data.id_user}` + '/home');
         } else {
