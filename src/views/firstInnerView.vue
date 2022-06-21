@@ -17,7 +17,7 @@ import bars from "../components/bars";
       bars
     },
     mounted () {
-      router.push('/1/home').catch(()=>{});
+      router.push('/'+this.$store.getters.idUser+'/home').catch(()=>{});
     }
   }
 </script>

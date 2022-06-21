@@ -9,7 +9,7 @@
           Usa el mejor gestor de tareas y mejora tu eficiencia tanto en el trabajo como en tu día a día.
         </div>
         <div class="contentCol1">
-          Organiza tus tareas usando los paneles o listas y crea grupos, todo ello en TaasKin!
+          Organiza tus tareas usando los paneles o listas, todo ello en TaasKin!
         </div>
       </div>
     </div>
@@ -67,7 +67,7 @@ import { validationMixin } from 'vuelidate'
 import { required, email } from 'vuelidate/lib/validators';
 import axios from 'axios';
 import router from '@/router';
-// import { response } from 'express';
+import { mapActions } from 'vuex';
 
 export default {
   name: "LandingView",
@@ -99,10 +99,11 @@ export default {
     },
   },
   methods: {
-    // updateId(){
-    //   this.$store.state.id_user = this.response.data.id_user;
-    //   this.$store.dispatch('updateIdAction');
-    // },
+    ...mapActions([
+      'updateIdAction',
+      'updateNickAction',
+      'updateTypeAction',
+    ]),
     goRegister() {
       router.push('/register');
     },
@@ -113,11 +114,12 @@ export default {
           "password": this.pwd
         })
       if (this.errors != '') {
-        this.$store.state.id_user = response.data.id_user;
-        this.$store.dispatch('updateIdAction');
         if (response.data.email) {
-          // localStorage.setItem('id_user', response.data.id_user);
-          router.push('/' + `${response.data.id_user}` + '/home');
+          this.updateIdAction(response.data.id_user);
+          this.updateNickAction(response.data.nick);
+          this.updateTypeAction(response.data.typeof);
+          let userId = this.$store.getters.idUser;
+          router.push('/' + userId + '/home');
         } else {
           this.message = "No se encuentra el usuario";
           this.email = '';

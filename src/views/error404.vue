@@ -1,7 +1,7 @@
 <template>
     <div class="containerError">
         ERROR 404:
-        La página que ests buscando no existe.
+        La página que estás buscando no existe.
         <button type="button1" class="button mt-5" @click="goHome()"> Volver </button>
     </div>
 </template>

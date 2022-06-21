@@ -15,7 +15,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/register.vue')
   },
   {
-    path: '/:id(\\d+)',
+    path: '/:id',
     name: 'id',
     component: () => import(/* webpackChunkName: "about" */ '../views/firstInnerView.vue'),
     children: [
@@ -24,18 +24,13 @@ const routes = [
         component: () => import(/* webpackChunkName: "about" */ '../views/insideViews/workspaceView.vue'),
         name: 'workspace'
       },
-      {
-        path: 'cacc',
-        component: () => import(/* webpackChunkName: "about" */ '../views/insideViews/cacc.vue'),
-        name: 'cacc'
-      }
     ]
   },
-  {
-    path: '/*',
-    name: 'error',
-    component: () => import(/* webpackChunkName: "about" */ '../views/error404.vue'),
-  }
+  // {
+  //   path: '/*',
+  //   name: 'error',
+  //   component: () => import(/* webpackChunkName: "about" */ '../views/error404.vue'),
+  // }
 ]
 
 const router = new VueRouter({

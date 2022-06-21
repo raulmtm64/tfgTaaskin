@@ -6,7 +6,19 @@
 .innerView{
     position: absolute;
     top: 10%;
-    left: 25.15%;
+    left: 20%;
     height: 90vh;
     width: 75vw;
+}
+
+@media only screen and (max-width: 611px){
+
+  .innerView{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    height: 90vh;
+    width: 75vw;
+}
+
 }
